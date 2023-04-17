@@ -63,7 +63,7 @@ function OrderDetails() {
         <Form.Group controlId="formFileSm" className="mb-3">
           <Form.Label>Import File</Form.Label>
           <Form.Control type="file" onChange={handleFileInput} required />
-          <Form.Control.Feedback type="invalid">Please provide import file.</Form.Control.Feedback>
+          <Form.Control.Feedback type="invalid">Please do not leave this blank.</Form.Control.Feedback>
         </Form.Group>
 
         <div className='od-title'>
