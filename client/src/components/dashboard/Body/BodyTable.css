@@ -1,0 +1,11 @@
+.body-table{
+    margin: 10px;
+    width: 97%;
+    /* z-index: -1; */
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+}

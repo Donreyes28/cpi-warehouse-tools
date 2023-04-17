@@ -1,0 +1,22 @@
+.tblCxSalesListStyles{
+    font-Size: '13px';
+};
+
+.trHeaders{
+    color: '#2980B9';
+    font-size: 11px;
+    text-transform: 'uppercase';
+};
+
+.btn-group-sm>.btn, .btn-sm {
+    margin: 5px;
+}
+
+.modalForm{
+    border-radius: 100px;
+    border: 1px solid red;
+}
+
+.tblCxSalesListStyles td, .tblCxSalesListStyles th {
+    border: none;
+  }

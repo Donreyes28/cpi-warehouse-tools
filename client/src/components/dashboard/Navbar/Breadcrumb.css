@@ -1,0 +1,23 @@
+.nav-breadcrumb {
+  color: black;
+  margin-left: 3px;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: justify;
+  transition: margin-left 0.1s ease-in-out 0.1s, border-bottom 0.1s ease-in-out;
+  transform: translateZ(0);
+  position: sticky;
+  min-width: 600px;
+  max-width: 100%;
+  /* border-bottom: 1px solid black; */
+  /* background-color: rgb(211, 204, 204); */
+  /* box-shadow: 0px 4px 14px 0px #000; */
+}
+
+.nav-breadcrumb-item :hover {
+  background-color: #00a3cc;
+  color: white;
+}
