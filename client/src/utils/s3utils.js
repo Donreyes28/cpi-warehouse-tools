@@ -3,13 +3,13 @@ import AWS from 'aws-sdk';
 import fileSaver from 'file-saver'
 
 AWS.config.update({
-  accessKeyId: 'AKIAXGGJDX5IK3Z6DIF7',
-  secretAccessKey: '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',
+  accessKeyId: '',
+  secretAccessKey: '',
 
 });
 
-const BUCKET = 'cpi-warehouse-tools';
-const REGION = 'us-east-1';
+const BUCKET = '';
+const REGION = '';
 
 const myBucket = new AWS.S3({
   params: {Bucket: BUCKET},
@@ -21,7 +21,7 @@ const uploadS3File = async (file, generatedKey) => {
   const params = {
     ACL: 'public-read',
     Body: file,
-    Bucket: 'cpi-warehouse-tools',  
+    Bucket: '',  
     Key: `uploads/${generatedKey}-${file.name}`,
   };
 
@@ -33,7 +33,7 @@ const uploadS3File = async (file, generatedKey) => {
 const downloadS3File = (s3Key) => {
   const s3 = new AWS.S3();
   return new Promise((resolve, reject) => {
-    s3.getObject({Key: s3Key, Bucket: 'cpi-warehouse-tools'}, (error, data) => {
+    s3.getObject({Key: s3Key, Bucket: ''}, (error, data) => {
       if (error) {
         reject(error);
       } else {
